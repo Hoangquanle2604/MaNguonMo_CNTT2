@@ -8,20 +8,25 @@
 </head>
 
 <body>
-    <table border="1" align="enter">
-      <tr>
-        <?php
-            for ($i = 0; $i < 10; $i++) {
-              echo"<th>Chương $i </th>";
+    <table border="1" align="center">
+        <tr>
+            <?php
+            echo"Cau 2: ";
+            for ($i = 1; $i <= 10; $i++) {
+                echo "<th>Chuong $i</th>";
             }
+            ?>
+        </tr>
+        <?php
+        for ($i = 1; $i <= 10; $i++){
+            echo "<tr>";
+            for ($j = 1; $j <= 10; $j++){
+                echo "<td>$i x $j=". $i*$j."</td>";
+            }
+            echo "</tr>";
+        }
         ?>
-      </tr>
     </table>
-
-
-
-
-
 
 
   <?php
@@ -34,16 +39,6 @@
       echo "$i ";
   }
 
-  //bang cuu chuong
-  echo "<br> Câu 2: ";
-  echo "<br>Bảng cửu chương: ";
-  for ($i = 1; $i <= 10; $i++) {
-    echo "<br>Bảng cửu chương $i: ";
-    for ($j = 1; $j <= 10; $j++) {
-      $ket_qua = $i * $j;
-      echo "<br>$i x $j = $ket_qua ";
-    }
-  }
 
   //Cau 3
   //a
